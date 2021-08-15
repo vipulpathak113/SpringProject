@@ -10,6 +10,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.testProject.Student" name="student1" p:studentId="123456" p:studentName="vipul" p:studentAddress="Deoria" />
+	<bean class="com.testProject.Student" name="student1" p:studentId="123456" p:studentName="vipul" p:studentAdress="Deoria" />
 
 </beans>

@@ -10,21 +10,6 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.testProject.Student" name="student1">
-		<property name="studentId">
-			<value>12456</value>
-		</property>
-		
-		<property name="studentName">
-			<value>Vipul</value>
-		</property>
-		
-		<property name="studentAddress">
-			<value>Deoria</value>
-		</property>
-
-	</bean>
-
-
+	<bean class="com.testProject.Student" name="student1" p:studentId="123456" p:studentName="vipul" p:studentAddress="Deoria" />
 
 </beans>
