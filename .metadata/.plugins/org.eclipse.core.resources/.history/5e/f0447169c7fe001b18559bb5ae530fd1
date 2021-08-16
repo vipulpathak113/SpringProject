@@ -1,0 +1,15 @@
+package com.test.collectionsInjection;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Employee {
+
+	private String name;
+	private List<String> phones;
+	private Set<String> adresses;
+	private Map<String,String> courses;
+	
+
+}
