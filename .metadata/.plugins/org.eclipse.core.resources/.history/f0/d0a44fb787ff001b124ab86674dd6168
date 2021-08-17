@@ -1,0 +1,20 @@
+package com.test.constructorInjection;
+
+public class Certi {
+	
+	private int name;
+
+	public int getName() {
+		return name;
+	}
+
+	public void setName(int name) {
+		this.name = name;
+	}
+
+	public Certi(int name) {
+		super();
+		this.name = name;
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.test.constructorInjection;
+
+public class Person {
+	
+	private String name;
+	private int phoneNumber;
+	private Certi certi;
+	private List<String>;
+
+}

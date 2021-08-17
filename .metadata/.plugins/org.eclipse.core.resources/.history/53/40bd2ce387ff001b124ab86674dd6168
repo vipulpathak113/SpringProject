@@ -1,0 +1,25 @@
+package com.test.constructorInjection;
+
+public class Certi {
+	
+	private int name;
+
+	public int getName() {
+		return name;
+	}
+
+	@Override
+	public String toString() {
+		return this.name;
+	}
+
+	public void setName(int name) {
+		this.name = name;
+	}
+
+	public Certi(int name) {
+		super();
+		this.name = name;
+	}
+
+}
