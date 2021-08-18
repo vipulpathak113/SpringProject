@@ -9,6 +9,10 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    
+    <!-- to enable annotation -->
+    <context:annotation-config></context:annotation-config>    
 
 	<bean class="com.test.beanLifecycle.UsingXML" name="car" init-method="init" destroy-method="destroy">
 		<property name="price" value="1000"/>
@@ -16,6 +20,10 @@
 	
 	<bean class="com.test.beanLifecycle.UsingInterface" name="interfc">
 		<property name="price" value="1200"/>
+	</bean>
+	
+	<bean class="com.test.beanLifecycle.UsingAnnotation" name="annot">
+		<property name="price" value="1500"/>
 	</bean>
 
 </beans>

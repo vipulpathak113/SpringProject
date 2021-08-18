@@ -22,8 +22,8 @@ public class Test {
 	System.out.println(usingInterface);
 	
 	System.out.println("------------------------------usingAnnotation");
-	UsingAnnotation usingAnnotation = (UsingAnnotation) context.getBean("annot");
-	System.out.println(usingAnnotation);
+	UsingInterface usingInterface = (UsingInterface) context.getBean("interfc");
+	System.out.println(usingInterface);
 	
 	context.registerShutdownHook();
 

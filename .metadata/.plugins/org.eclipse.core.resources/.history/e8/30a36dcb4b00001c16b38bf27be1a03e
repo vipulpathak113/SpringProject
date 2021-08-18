@@ -1,8 +1,5 @@
 package com.test.beanLifecycle;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 public class UsingAnnotation {
 	
 	private int price;
@@ -28,16 +25,6 @@ public class UsingAnnotation {
 	public UsingAnnotation() {
 		super();
 		// TODO Auto-generated constructor stub
-	}
-	
-	@PostConstruct
-	public void init() {
-		System.out.println("in Annotation init");
-	}
-	
-	@PreDestroy
-	public void destroy() {
-		System.out.println("in Annotation destroy");
 	}
 	
 	

@@ -32,12 +32,12 @@ public class UsingAnnotation {
 	
 	@PostConstruct
 	public void init() {
-		System.out.println("in Annotation init");
+		System.out.println("in XML init");
 	}
 	
 	@PreDestroy
 	public void destroy() {
-		System.out.println("in Annotation destroy");
+		System.out.println("in XML destroy");
 	}
 	
 	
