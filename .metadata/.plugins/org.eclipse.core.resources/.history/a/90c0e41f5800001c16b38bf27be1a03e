@@ -1,0 +1,12 @@
+package com.test.Annotations;
+
+public class Student {
+	
+	private Address adress;
+	public Student() {
+		super();
+		System.out.println("inside constructorrr");
+	}
+	
+
+}

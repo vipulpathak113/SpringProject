@@ -1,0 +1,5 @@
+package com.test.Annotations;
+
+public class Student {
+
+}

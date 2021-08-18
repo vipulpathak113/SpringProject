@@ -8,7 +8,7 @@ public class App
     public static void main( String[] args )
     {
         @SuppressWarnings("resource")
-		ApplicationContext context =new ClassPathXmlApplicationContext("config.xml");
+		ApplicationContext context =new ClassPathXmlApplicationContext("com/testProject/config.xml");
         
         Student student1= (Student) context.getBean("student1");
         
