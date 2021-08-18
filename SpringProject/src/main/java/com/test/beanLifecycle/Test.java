@@ -13,9 +13,15 @@ public class Test {
 		
 	AbstractApplicationContext context=	new ClassPathXmlApplicationContext("com/test/beanLifecycle/config.xml");
 	
-	Car car = (Car) context.getBean("car");
+	System.out.println("------------------------------usingXML");
+	UsingXML usingXML = (UsingXML) context.getBean("car");
 	
-	System.out.println(car);
+	System.out.println(usingXML);
+	
+	System.out.println("------------------------------usingInterface");
+	UsingInterface usingInterface = (UsingInterface) context.getBean("interfc");
+	
+	System.out.println(usingInterface);
 	
 	context.registerShutdownHook();
 

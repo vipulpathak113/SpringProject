@@ -1,0 +1,31 @@
+package com.test.beanLifecycle;
+
+public class UsingInterface {
+	
+	private int price;
+
+	public UsingInterface() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public UsingInterface(int price) {
+		super();
+		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "UsingInterface [price=" + price + "]";
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+
+}

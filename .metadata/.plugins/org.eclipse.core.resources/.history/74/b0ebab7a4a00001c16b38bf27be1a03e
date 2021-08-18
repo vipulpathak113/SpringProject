@@ -1,0 +1,8 @@
+package com.test.beanLifecycle;
+
+public class UsingInterface {
+	
+	private int price;
+	
+
+}
