@@ -1,0 +1,15 @@
+package com.test.standaloneCollections;
+
+import java.util.List;
+import java.util.Map;
+
+public class Student {
+	
+	private String name;
+	private List<String> courses;
+	private Map<String,Integer> feeStructure;
+	
+	
+	
+
+}
