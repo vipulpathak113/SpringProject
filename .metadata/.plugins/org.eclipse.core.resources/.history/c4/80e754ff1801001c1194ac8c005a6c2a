@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Student {
-	@Autowired
-	@Qualifier("temp2")
 	private Address adress;
 
 	public Student() {
@@ -27,6 +25,8 @@ public class Student {
 		return "Student [adress=" + adress + "]";
 	}
 
+	@Autowired
+	@Qualifier("temp")
 	public Student(Address adress) {
 		super();
 		this.adress = adress;

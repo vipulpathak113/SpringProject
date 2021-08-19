@@ -12,12 +12,12 @@
 
 
 	<context:annotation-config />
-	<bean class="com.test.Annotations.autowire.Address" name="temp">
+	<bean class="com.test.Annotations.autowire.Address" name="adress">
 		<property name="city" value="Deoria" />
 		<property name="state" value="UP" />
 	</bean>
 	
-		<bean class="com.test.Annotations.autowire.Address" name="temp2">
+		<bean class="com.test.Annotations.autowire.Address" name="adress">
 		<property name="city" value="Gorakhpur" />
 		<property name="state" value="UP" />
 	</bean>
