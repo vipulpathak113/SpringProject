@@ -13,12 +13,6 @@
         http://www.springframework.org/schema/util
         http://www.springframework.org/schema/util/spring-util.xsd">
   
-  <context:component-scan base-package="com.test.annotation.stereotype"/>   
-  
-  <util:list list-class="java.util.ArrayList" id="course">
-  <value>CS</value>
-  <value>Maths</value>
-  
-  </util:list>   
+  <context:component-scan base-package="com.test.annotation.stereotype"/>      
     
 </beans>

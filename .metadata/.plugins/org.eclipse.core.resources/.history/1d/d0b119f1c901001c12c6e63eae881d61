@@ -13,8 +13,7 @@ public class Student {
 
 	@Value("Noida")
 	private String city;
-
-	@Value("#{course}")
+	
 	private List<String> courses;
 
 	public List<String> getCourses() {
@@ -27,7 +26,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", city=" + city + ", courses=" + courses + "]";
+		return "Student [name=" + name + ", city=" + city + "]";
 	}
 
 	public String getName() {
