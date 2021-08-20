@@ -12,11 +12,6 @@ public class Test {
 
 		Student student = context.getBean("test", Student.class);
 		System.out.println(student);
-		System.out.println(student.hashCode());
-
-		Student student1 = context.getBean("test", Student.class);
-		System.out.println(student1);
-		System.out.println(student1.hashCode());
 
 		context.registerShutdownHook();
 
