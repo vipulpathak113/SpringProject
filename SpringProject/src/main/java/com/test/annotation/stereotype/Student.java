@@ -16,6 +16,7 @@ public class Student {
 	@Value("Noida")
 	private String city;
 
+//	spel
 	@Value("#{course}")
 	private List<String> courses;
 

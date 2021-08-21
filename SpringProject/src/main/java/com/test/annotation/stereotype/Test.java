@@ -2,6 +2,8 @@ package com.test.annotation.stereotype;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.expression.Expression;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
 
 public class Test {
 
@@ -19,6 +21,10 @@ public class Test {
 		System.out.println(student1.hashCode());
 
 		context.registerShutdownHook();
+
+		SpelExpressionParser parser = new SpelExpressionParser();
+		Expression expression = parser.parseExpression("2+2");
+		System.out.println(expression.getValue());
 
 	}
 

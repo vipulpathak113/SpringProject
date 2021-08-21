@@ -1,0 +1,42 @@
+package com.test.spel;
+
+import sun.util.calendar.LocalGregorianCalendar.Date;
+
+public class Inventor {
+
+	private String name;
+	private Date birthday;
+	private String nationality;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(String birthday) {
+		this.birthday = birthday;
+	}
+
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	public Inventor(String name, String birthday, String nationality) {
+		super();
+		this.name = name;
+		this.birthday = birthday;
+		this.nationality = nationality;
+	}
+
+}
