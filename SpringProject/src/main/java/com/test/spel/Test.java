@@ -2,6 +2,8 @@ package com.test.spel;
 
 import java.util.GregorianCalendar;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.expression.EvaluationContext;
 import org.springframework.expression.Expression;
 import org.springframework.expression.ExpressionParser;
@@ -17,24 +19,15 @@ public class Test {
 
 		// The constructor arguments are name, birthday, and nationality.
 		Inventor tesla = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
-
 		ExpressionParser parser = new SpelExpressionParser();
 		Expression exp = parser.parseExpression("name");
 		EvaluationContext context = new StandardEvaluationContext(tesla);
-
 		String name = (String) exp.getValue(context);
-
 		System.out.println(name);
 
-		// The constructor arguments are name, birthday, and nationality.
-		Inventor tesla1 = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
-
-		ExpressionParser parser1 = new SpelExpressionParser();
-		Expression exp1 = parser1.parseExpression("name");
-
-		String name1 = (String) exp1.getValue(tesla1);
-		System.out.println(name1);
-
+		ApplicationContext context1 = new ClassPathXmlApplicationContext("com/test/spel/config.xml");
+		Employee emp = context1.getBean("employee", Employee.class);
+		System.out.println(emp);
 	}
 
 }

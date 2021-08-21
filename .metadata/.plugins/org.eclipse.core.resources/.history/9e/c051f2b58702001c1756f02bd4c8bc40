@@ -1,0 +1,38 @@
+package com.test.spel;
+
+import java.util.GregorianCalendar;
+
+import org.springframework.expression.Expression;
+import org.springframework.expression.ExpressionParser;
+import org.springframework.expression.spel.standard.SpelExpressionParser;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// Create and set a calendar
+		GregorianCalendar c = new GregorianCalendar();
+		c.set(1856, 7, 9);
+
+		// The constructor arguments are name, birthday, and nationality.
+		Inventor tesla = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
+
+		ExpressionParser parser = new SpelExpressionParser();
+		Expression exp = parser.parseExpression("name");
+		EvaluationContext context = new StandardEvaluationContext(tesla);
+
+		String name = (String) exp.getValue(context);
+
+		System.out.println(name);
+
+		// The constructor arguments are name, birthday, and nationality.
+		Inventor tesla1 = new Inventor("Nikola Tesla", c.getTime(), "Serbian");
+
+		ExpressionParser parser1 = new SpelExpressionParser();
+		Expression exp1 = parser1.parseExpression("name");
+
+		String name1 = (String) exp1.getValue(tesla1);
+//		System.out.println(name1);
+
+	}
+
+}

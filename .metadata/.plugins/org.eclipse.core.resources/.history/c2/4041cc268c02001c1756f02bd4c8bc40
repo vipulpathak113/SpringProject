@@ -1,0 +1,11 @@
+package com.test.spel;
+
+public class Employee {
+	
+	private String name;
+	
+	private double salary;
+	
+	private double yoe;
+
+}
