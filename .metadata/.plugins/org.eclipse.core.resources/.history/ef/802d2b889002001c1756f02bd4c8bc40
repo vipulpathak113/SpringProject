@@ -18,7 +18,7 @@ public class Employee {
 	@Value("#{T(java.lang.Math).PI}")
 	private double yoe;
 
-	@Value("#{5>3}")
+	@Value("#{T(java.lang.Math).PI}")
 	private boolean isActive;
 
 	@Override

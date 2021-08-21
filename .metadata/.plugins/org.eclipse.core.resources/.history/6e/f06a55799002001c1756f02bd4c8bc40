@@ -17,14 +17,11 @@ public class Employee {
 	// invoking static variable
 	@Value("#{T(java.lang.Math).PI}")
 	private double yoe;
-
-	@Value("#{5>3}")
+	
+	@Value("#{T(java.lang.Math).PI}")
 	private boolean isActive;
 
-	@Override
-	public String toString() {
-		return "Employee [name=" + name + ", salary=" + salary + ", yoe=" + yoe + ", isActive=" + isActive + "]";
-	}
+
 
 	public String getName() {
 		return name;
