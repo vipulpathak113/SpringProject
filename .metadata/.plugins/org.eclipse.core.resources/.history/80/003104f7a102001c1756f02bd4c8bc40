@@ -1,0 +1,9 @@
+package com.test.noXML;
+
+public class Student {
+	
+	
+  private String name;	
+	
+
+}

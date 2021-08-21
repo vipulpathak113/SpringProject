@@ -3145,3 +3145,15 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2021-08-21 20:13:34,792 [Worker-55: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\main\resources
 2021-08-21 20:13:34,793 [Worker-55: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-08-21 20:13:34,793 [Worker-55: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\test\resources
+2021-08-21 20:30:07,801 [Worker-55: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-21 20:30:07,802 [Worker-55: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\main\resources
+2021-08-21 20:30:07,805 [Worker-55: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-21 20:30:07,805 [Worker-55: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\test\resources
+2021-08-21 20:30:17,397 [Worker-58: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-21 20:30:17,398 [Worker-58: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\main\resources
+2021-08-21 20:30:17,400 [Worker-58: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-21 20:30:17,400 [Worker-58: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\test\resources
+2021-08-21 20:30:32,728 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-21 20:30:32,729 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\main\resources
+2021-08-21 20:30:32,731 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-08-21 20:30:32,731 [Worker-54: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Learning\Workspace\SpringProject\src\test\resources
