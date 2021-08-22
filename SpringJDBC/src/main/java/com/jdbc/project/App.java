@@ -18,12 +18,19 @@ public class App {
 
 		Student student = new Student();
 
-		student.setId(2);
-		student.setName("Sachin Tendulkar");
-		student.setCity("Mumbai");
+//		student.setId(2);
+//		student.setName("Sachin Tendulkar");
+//		student.setCity("Mumbai");
+//
+//		int result = studentDao.insert(student);
+//		System.out.println("No. of rows inserted " + result);
 
-		int result = studentDao.insert(student);
-		System.out.println("No. of rows inserted " + result);
+		student.setId(1);
+		student.setName("Ramesh");
+		student.setCity("Delhi");
+
+		int result = studentDao.update(student);
+		System.out.println("No. of rows updated " + result);
 
 	}
 }

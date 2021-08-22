@@ -22,4 +22,10 @@ public class StudentDaoImpl implements StudentDao {
 		return result;
 	}
 
+	public int update(Student student) {
+		String query = "update student set name=?,city=? where id=?";
+		int result = this.template.update(query, student.getName(), student.getCity(), student.getId());
+		return result;
+	}
+
 }
