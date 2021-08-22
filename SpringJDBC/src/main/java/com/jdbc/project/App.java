@@ -1,5 +1,7 @@
 package com.jdbc.project;
 
+import java.util.Scanner;
+
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,19 +20,30 @@ public class App {
 
 		Student student = new Student();
 
-//		student.setId(2);
+		// Insert
+//		student.setId(3);
 //		student.setName("Sachin Tendulkar");
 //		student.setCity("Mumbai");
 //
 //		int result = studentDao.insert(student);
 //		System.out.println("No. of rows inserted " + result);
 
-		student.setId(1);
-		student.setName("Ramesh");
-		student.setCity("Delhi");
+		// update
+//		student.setId(1);
+//		student.setName("Ramesh");
+//		student.setCity("Delhi");
+//
+//		int result = studentDao.update(student);
+//		System.out.println("No. of rows updated " + result);
 
-		int result = studentDao.update(student);
-		System.out.println("No. of rows updated " + result);
+		// delete
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Student ID you want to Delete:");
+		int id = sc.nextInt();
+		sc.close();
+		int result = studentDao.delete(id);
+		System.out.println("No. of rows deleted " + result);
 
 	}
 }
