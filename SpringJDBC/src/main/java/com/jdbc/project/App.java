@@ -1,5 +1,7 @@
 package com.jdbc.project;
 
+import java.util.List;
+
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -43,8 +45,15 @@ public class App {
 //		int result = studentDao.delete(id);
 //		System.out.println("No. of rows deleted " + result);
 
-		Student result = studentDao.getStudent(2);
-		System.out.println("No. of rows updated " + result);
+		// get single object
+//		Student result = studentDao.getStudent(2);
+//		System.out.println("No. of rows updated " + result);
+
+		// get multiple objects
+		List<Student> students = studentDao.getAllStudents();
+		for (Student s : students) {
+			System.out.println(s);
+		}
 
 	}
 }
